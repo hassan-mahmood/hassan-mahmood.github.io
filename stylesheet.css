@@ -140,3 +140,157 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Work section styling */
+:root {
+  --accent: #1e3a8a; /* dark blue accent */
+}
+
+.work-section {
+  padding: 18px 0;
+  margin: 18px 0;
+}
+
+.work-section h2 {
+  color: var(--accent);
+  margin: 0 0 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  font-size: 20px;
+}
+
+.jobs {
+  display: block;
+}
+
+.job {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job-content {
+  flex: 1;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.job .employer {
+  font-weight: 400;
+  color: #666;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+  font-style: italic;
+}
+
+.meta {
+  color: #666;
+  font-size: 13px;
+  margin: 6px 0 8px 0;
+}
+
+.job p {
+  margin: 0;
+  color: #222;
+  line-height: 1.45;
+}
+
+@media (max-width: 600px) {
+  .job { flex-direction: column; }
+}
+
+/* Publications styling */
+#publications-section {
+  margin: 18px 0;
+}
+
+#publications-section h2 {
+  color: var(--accent);
+  margin: 0 0 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  font-size: 20px;
+}
+
+table[style*="border-spacing: 0px 10px"] {
+  width: 100% !important;
+}
+
+table[style*="border-spacing: 0px 10px"] tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  display: table-row;
+}
+
+table[style*="border-spacing: 0px 10px"] tbody tr:last-child {
+  border-bottom: none;
+}
+
+table[style*="border-spacing: 0px 10px"] tr:hover {
+  background: #fafafa;
+}
+
+.one {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.papertitle {
+  color: var(--accent);
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Reviews styling */
+.reviews-section {
+  padding: 18px 0;
+  margin: 18px 0;
+}
+
+.reviews-section h2 {
+  color: var(--accent);
+  margin: 0 0 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  font-size: 20px;
+}
+
+.reviews-section p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #222;
+}
+
+.review-venues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-venues li {
+  padding: 8px 0 8px 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+  position: relative;
+}
+
+.review-venues li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
