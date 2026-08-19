@@ -1,175 +1,331 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta charset="utf-8">
+<title>Hassan Mahmood</title>
+<meta name="author" content="Hassan Mahmood">
+<meta name="description" content="Hassan Mahmood is a Ph.D. candidate in Computer Science at Northeastern University working on adversarial attacks and robustness in discriminative and generative models.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheet.css?v=3">
+<script>
+/* Set the theme before first paint so the page never flashes the wrong colors. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') {
+    t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+</head>
 
-    <title>Hassan Mahmood</title>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <meta name="author" content="Hassan Mahmood">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=1">
-    
-  </head>
+<button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch theme">
+  <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4.2"></circle>
+    <path d="M12 2.2v2.4M12 19.4v2.4M4.1 4.1l1.7 1.7M18.2 18.2l1.7 1.7M2.2 12h2.4M19.4 12h2.4M4.1 19.9l1.7-1.7M18.2 5.8l1.7-1.7"></path>
+  </svg>
+  <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20.5 14.4A8.6 8.6 0 0 1 9.6 3.5a8.6 8.6 0 1 0 10.9 10.9z"></path>
+  </svg>
+</button>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Hassan Mahmood
-                </p>
-                <p>
-                  I am a Ph.D. candidate in Computer Science at <a href="https://www.northeastern.edu/">Northeastern University</a> in Boston, MA, advised by <a href="https://www.khoury.northeastern.edu/home/eelhami/">Dr. Ehsan Elhamifar</a>. My research investigates adversarial attacks and robustness of deep learning models across discriminative and generative settings. I completed my Masters in Computer Science at Northeastern University and my Bachelors at <a href="https://nust.edu.pk/">SEECS, NUST, Pakistan</a>, where I was advised by Dr. Faisal Shafait.
-                </p>
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:mahmood.h@northeastern.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Hassan-Resume.pdf">Resume</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=LnjsphYAAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://linkedin.com/in/hassan-mahmood-">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/hassan-mahmood/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/Hassan.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 10%;" alt="profile photo" src="images/Hassan.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I am interested in AI security and adversarial robustness for both discriminative and generative models. My research develops scalable adversarial attacks, defenses, and evaluation frameworks. Recent projects explore multi-label adversarial attacks and backdoor attacks in diffusion models.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <section id="publications-section" class="publications-section">
-            <h2>Publications</h2>
-            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<div class="page">
 
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="identity">
+      <p class="eyebrow">Ph.D. Candidate &middot; Computer Science</p>
+      <h1 class="name">Hassan Mahmood</h1>
+      <p class="lede">
+        I am a Ph.D. candidate at <a href="https://www.northeastern.edu/">Northeastern University</a> in Boston,
+        advised by <a href="https://www.khoury.northeastern.edu/home/eelhami/">Dr. Ehsan Elhamifar</a>. My research
+        studies adversarial attacks and robustness of deep learning models across discriminative and generative
+        settings. I most recently spent the summer at <strong>Google Cloud AI</strong>, building multi-agent systems
+        for fleet-scale root-cause analysis.
+      </p>
+      <p class="lede">
+        I completed my Master's at Northeastern and my Bachelor's at
+        <a href="https://nust.edu.pk/">SEECS, NUST</a>, where I was advised by Dr. Faisal Shafait.
+      </p>
 
-<tr>
-      <td style="padding:16px;width:20%;vertical-align:middle;">
-        <div class="one">
-          <img src='images/cvpr25.jpg' width=100%>
+      <nav class="links" aria-label="Contact and profiles">
+        <a href="mailto:mahmood.h@northeastern.edu">Email</a>
+        <a href="data/Hassan-Resume.pdf">Resume</a>
+        <a href="https://scholar.google.com/citations?user=LnjsphYAAAAJ">Scholar</a>
+        <a href="https://linkedin.com/in/hassan-mahmood-">LinkedIn</a>
+        <a href="https://github.com/hassan-mahmood/">GitHub</a>
+      </nav>
+    </div>
+
+    <div class="portrait">
+      <img src="images/Hassan.jpeg" alt="Hassan Mahmood">
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="block" id="research">
+      <div class="block-head">
+        <h2>Research</h2>
+      </div>
+      <p class="prose">
+        I work on AI security and adversarial robustness for both discriminative and generative models, developing
+        scalable attacks, defenses, and evaluation frameworks. Recent projects cover universal multi-label
+        perturbations, clean-label backdoor attacks on diffusion models, and the reliability of autonomous LLM agents.
+      </p>
+      <ul class="tags">
+        <li>Adversarial Robustness</li>
+        <li>Generative Models</li>
+        <li>Computer Vision</li>
+        <li>LLM Agents</li>
+      </ul>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="block" id="publications">
+      <div class="block-head">
+        <h2>Publications</h2>
+      </div>
+
+      <article class="entry pub">
+        <div class="entry-mark">
+          <img src="images/neurips.png" alt="" onerror="this.parentNode.classList.add(&#39;mark-empty&#39;);this.remove();">
         </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <span class="papertitle">Compositional Targeted Multi-Label Universal Perturbations</span>
-        <strong>Hassan Mahmood</strong>, 
-        <span>Ehsan Elhamifar</span>
-        <br>
-        <em>CVPR</em>, 2025 
-        <br>
-        <font color="#C41E3A"><strong>Spotlight</strong></font> Presentation at <a href = "https://uncertainty-cv.github.io/2025/program/" color = "red">UNCV Workshop 2025</a>
-        <br>
-        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Mahmood_Compositional_Targeted_Multi-Label_Universal_Perturbations_CVPR_2025_paper.pdf">Paper</a>
-        /
-        <a href="https://github.com/hassan-mahmood/UMLLAttacks">Code</a>
-        <p></p>
-        <p>
-          A scalable approach to generate targeted multi-label universal adversarial perturbations through a compositional framework, reducing time and space complexity from exponential to linear while retaining strong attack effectiveness.
-		<!-- Learning a single universal perturbation that can simultaneously target multiple labels in multi-label classification models by composing label-specific perturbations. -->
-        </p>
-      </td>
-    </tr>
-    <tr style="height: 1px;">
-      <td colspan="2" style="border-bottom: 1px solid #f0f0f0; padding: 0;"></td>
-    </tr>
-
-    <tr>
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <img src='images/cvpr24.jpg' width=100%>
+        <div class="entry-body">
+          <p class="venue">Under review &middot; NeurIPS 2026</p>
+          <h3 class="entry-title">Clean-Label Backdoor Attacks for Diffusion Models</h3>
+          <p class="authors"><strong>Hassan Mahmood</strong>, Alina Oprea, Ehsan Elhamifar</p>
+          <p class="summary">
+            A meta-learning framework that shapes the poisoned inputs so that standard diffusion training still learns
+            accurate score estimates on them, instead of denoising the trigger away — raising poisoning success by
+            roughly 20% over small-perturbation baselines.
+          </p>
         </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle;">
-        <span class="papertitle">Semantic-Aware Multi-Label Adversarial Attacks</span>
-        <strong>Hassan Mahmood</strong>, 
-        <span>Ehsan Elhamifar</span>
-        <br>
-        <em>CVPR</em>, 2024 
-        <br>
-        <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Mahmood_Semantic-Aware_Multi-Label_Adversarial_Attacks_CVPR_2024_paper.pdf">Paper</a>
-        /
-        <a href="https://github.com/hassan-mahmood/SemanticMLLAttacks">Code</a>
-        <p></p>
-        <p>
-          A knowledge-graph based framework to generate semantically aware adversarial attacks for multi-label learning and addressed the negative gradient correlation in perturbation optimization, enabling effective attacks, scalable to large datasets. 
-        </p>
-      </td>
-    </tr>
-    <tr style="height: 1px;">
-      <td colspan="2" style="border-bottom: 1px solid #f0f0f0; padding: 0;"></td>
-    </tr>
+      </article>
 
-    <tr>
-      <td style="padding:16px;width:20%;vertical-align:middle;">
-        <div class="one">
-          <img src='images/icdar19.png' width=100%>
+      <article class="entry pub">
+        <div class="entry-mark">
+          <img src="images/cvpr25.jpg" alt="" onerror="this.parentNode.classList.add(&#39;mark-empty&#39;);this.remove();">
         </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <span class="papertitle">Rethinking Table Recognition using Graph Neural Networks</span>
-        <span>Shah Rukh Qasim</span>, 
-        <strong>Hassan Mahmood</strong>, 
-        <span>Faisal Shafait</span>
-        <br>
-        <em>ICDAR</em>, 2019
-        <br>
-        <a href="https://arxiv.org/pdf/1905.13391">Paper</a>
-        /
-        <a href="https://github.com/shahrukhqasim/TIES-2.0">Code</a>
-        <p></p>
-        <p>
-          A graph neural network based approach that models spatial relationships between table elements to accurately recognize table structures in document images, robust to complex and irregular layouts.
-        </p>
-      </td>
-    </tr>
-            </tbody></table>
-          </section>
-      <section id="work" class="work-section">
-            <h2>Work Experience</h2>
-            <div class="jobs">
-              <article class="job">
-                <div class="job-content">
-                  <h3>Graduate Research Assistant</h3>
-                  <div class="employer">University of Houston, Texas</div>
-                  <div class="meta"><time datetime="2019-08">Aug 2019</time> — <time datetime="2020-07">July 2020</time></div>
-                  <p>Worked on explainability of deep learning models for cardiovascular disease prediction and social determinants of health. I also worked on privacy-preserving affective computing using temporal gait analysis.</p>
-                </div>
-              </article>
+        <div class="entry-body">
+          <p class="venue">CVPR 2025 <span class="badge">Spotlight &middot; UNCV Workshop</span></p>
+          <h3 class="entry-title">Compositional Targeted Multi-Label Universal Perturbations</h3>
+          <p class="authors"><strong>Hassan Mahmood</strong>, Ehsan Elhamifar</p>
+          <p class="summary">
+            A compositional framework for targeted multi-label universal adversarial perturbations that cuts time and
+            space complexity from exponential to linear while retaining strong attack effectiveness.
+          </p>
+          <p class="entry-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Mahmood_Compositional_Targeted_Multi-Label_Universal_Perturbations_CVPR_2025_paper.pdf">Paper</a>
+            <a href="https://github.com/hassan-mahmood/UMLLAttacks">Code</a>
+            <a href="https://uncertainty-cv.github.io/2025/program/">Workshop</a>
+          </p>
+        </div>
+      </article>
 
-              <article class="job">
-                <div class="job-content">
-                  <h3>AI Researcher</h3>
-                  <div class="employer">National Center of Artificial Intelligence, Pakistan</div>
-                  <div class="meta"><time datetime="2018-07">Jul 2018</time> — <time datetime="2019-08">August 2019</time></div>
-                  <p>Worked on developing deep learning models for document image understanding, with a focus on segmenting tabular regions and recognizing table structures in complex documents.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
+      <article class="entry pub">
+        <div class="entry-mark">
+          <img src="images/cvpr24.jpg" alt="" onerror="this.parentNode.classList.add(&#39;mark-empty&#39;);this.remove();">
+        </div>
+        <div class="entry-body">
+          <p class="venue">CVPR 2024</p>
+          <h3 class="entry-title">Semantic-Aware Multi-Label Adversarial Attacks</h3>
+          <p class="authors"><strong>Hassan Mahmood</strong>, Ehsan Elhamifar</p>
+          <p class="summary">
+            A knowledge-graph based framework for semantically aware multi-label attacks that resolves the negative
+            gradient correlation between target and correlated labels, scaling to large datasets.
+          </p>
+          <p class="entry-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Mahmood_Semantic-Aware_Multi-Label_Adversarial_Attacks_CVPR_2024_paper.pdf">Paper</a>
+            <a href="https://github.com/hassan-mahmood/SemanticMLLAttacks">Code</a>
+          </p>
+        </div>
+      </article>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Design and source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>. 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+      <article class="entry pub">
+        <div class="entry-mark">
+          <img src="images/icdar19.png" alt="" onerror="this.parentNode.classList.add(&#39;mark-empty&#39;);this.remove();">
+        </div>
+        <div class="entry-body">
+          <p class="venue">ICDAR 2019</p>
+          <h3 class="entry-title">Rethinking Table Recognition using Graph Neural Networks</h3>
+          <p class="authors">Shah Rukh Qasim, <strong>Hassan Mahmood</strong>, Faisal Shafait</p>
+          <p class="summary">
+            A graph neural network that models spatial relationships between table elements to recover table structure
+            from document images, robust to complex and irregular layouts.
+          </p>
+          <p class="entry-links">
+            <a href="https://arxiv.org/pdf/1905.13391">Paper</a>
+            <a href="https://github.com/shahrukhqasim/TIES-2.0">Code</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="block" id="experience">
+      <div class="block-head">
+        <h2>Experience</h2>
+      </div>
+
+      <article class="entry job">
+        <div class="entry-mark">
+          <span class="logo" style="--brand:#4285F4">
+            <img src="images/logos/google.png" alt="Google"
+                 onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback');">
+            <span class="logo-initial" aria-hidden="true">G</span>
+          </span>
+        </div>
+        <div class="entry-body">
+          <p class="venue">May 2026 &mdash; Aug 2026 &middot; Seattle, WA</p>
+          <h3 class="entry-title">PhD Intern</h3>
+          <p class="authors">Google Cloud AI</p>
+          <p class="summary">
+            Worked on hierarchical multi-agent systems for automated root-cause diagnosis across cloud fleets,
+            building the specialized-agent layer that scopes each agent to a single log domain. Cut triage time from
+            16h to ~2h per 10K machines; deployed to SRE users.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry job">
+        <div class="entry-mark">
+          <span class="logo" style="--brand:#C8102E">
+            <img src="images/logos/northeastern.png" alt="Northeastern University"
+                 onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback');">
+            <span class="logo-initial" aria-hidden="true">N</span>
+          </span>
+        </div>
+        <div class="entry-body">
+          <p class="venue">Aug 2020 &mdash; Present &middot; Boston, MA</p>
+          <h3 class="entry-title">Graduate Research Assistant</h3>
+          <p class="authors">NOVA Lab, Northeastern University</p>
+          <ul class="summary-list">
+            <li>
+              Currently working on long-form, multi-task video understanding with vision-language models — allocating
+              scarce context through action-coverage-aware frame selection and selective token merging for zero-shot
+              temporal understanding under tight compute budgets.
+            </li>
+            <li>
+              Worked on adversarial attacks and robustness across discriminative and generative models — scalable
+              multi-label and universal perturbations, clean-label backdoor attacks on diffusion models, and auditing
+              of autonomous LLM agents.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry job">
+        <div class="entry-mark">
+          <span class="logo" style="--brand:#C8102E">
+            <img src="images/logos/houston.png" alt="University of Houston"
+                 onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback');">
+            <span class="logo-initial" aria-hidden="true">UH</span>
+          </span>
+        </div>
+        <div class="entry-body">
+          <p class="venue">Aug 2019 &mdash; Jul 2020 &middot; Houston, TX</p>
+          <h3 class="entry-title">Graduate Research Assistant</h3>
+          <p class="authors">CBL Lab, University of Houston</p>
+          <p class="summary">
+            Built explainable deep learning models for cardiovascular disease prediction on the MESA dataset, with
+            SHAP and LIME interpretability analyses. I also designed a privacy-preserving affective computing
+            framework using temporal gait modeling, which supported a $100K research grant.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry job">
+        <div class="entry-mark">
+          <span class="logo" style="--brand:#0A5C36">
+            <img src="images/logos/ncai.png" alt="National Center of Artifical Intelligence"
+                 onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback');">
+            <span class="logo-initial" aria-hidden="true">N</span>
+          </span>
+        </div>
+        <div class="entry-body">
+          <p class="venue">Jul 2018 &mdash; Aug 2019 &middot; Islamabad, Pakistan</p>
+          <h3 class="entry-title">AI Researcher</h3>
+          <p class="authors">National Center of Artificial Intelligence, NUST</p>
+          <p class="summary">
+            Worked on deep learning for document image understanding, focusing on graph-based recognition of table
+            structure in complex layouts, and open-sourced a synthetic dataset generator for tabular document images.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ SERVICE & AWARDS ============ -->
+    <section class="block" id="service">
+      <div class="block-head">
+        <h2>Service &amp; Awards</h2>
+      </div>
+      <div class="columns">
+        <div>
+          <p class="col-label">Service</p>
+          <ul class="list">
+            <li>Reviewer — TPAMI, CVPR, ICCV, ICLR, AAAI</li>
+            <li>Supervised an undergraduate research intern at the University of Houston</li>
+          </ul>
+        </div>
+        <div>
+          <p class="col-label">Awards</p>
+          <ul class="list">
+            <li>Global UGRAD exchange fellowship, U.S. Department of State — 190 selected from 2,500+ applicants</li>
+            <li>Prime Minister National ICT R&amp;D merit scholarship, fully funded undergraduate degree</li>
+            <li>Bronze medal, FBISE national higher secondary examinations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Last updated August 2026 &middot; Layout adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn  = document.getElementById('theme-toggle');
+  var manual = false;
+  try { manual = localStorage.getItem('theme') === 'light' || localStorage.getItem('theme') === 'dark'; } catch (e) {}
+
+  function label() {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    btn.setAttribute('aria-label', 'Switch to ' + next + ' theme');
+    btn.setAttribute('title', 'Switch to ' + next + ' theme');
+  }
+
+  btn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    manual = true;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    label();
+  });
+
+  /* Follow the system setting until the visitor picks one themselves. */
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+    if (manual) return;
+    root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    label();
+  });
+
+  label();
+})();
+</script>
+</body>
 </html>
